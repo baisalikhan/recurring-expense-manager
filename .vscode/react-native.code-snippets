@@ -1,0 +1,69 @@
+{
+  "React Native Functional Component with Export Default": {
+    "scope": "typescriptreact,javascriptreact",
+    "prefix": "rnfe",
+    "body": [
+      "import React from 'react';",
+      "import { Text, View } from 'react-native';",
+      "",
+      "const ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}} = () => {",
+      "  return (",
+      "    <View>",
+      "      <Text>${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}</Text>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}};",
+      "",
+      ""
+    ],
+    "description": "Creates a React Native functional component with styles and default export"
+  },
+  "React Native Functional Component (Named Export)": {
+    "scope": "typescriptreact,javascriptreact",
+    "prefix": "rnfs",
+    "body": [
+      "import React from 'react';",
+      "import { StyleSheet, Text, View } from 'react-native';",
+      "",
+      "export const ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}} = () => {",
+      "  return (",
+      "    <View style={styles.container}>",
+      "      <Text>${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}</Text>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "    justifyContent: 'center',",
+      "    alignItems: 'center',",
+      "  },",
+      "});",
+      ""
+    ],
+    "description": "Creates a React Native named functional component with styles"
+  },
+  "React Native Functional Component (Simple)": {
+    "scope": "typescriptreact,javascriptreact",
+    "prefix": "rnf",
+    "body": [
+      "import React from 'react';",
+      "import { Text, View } from 'react-native';",
+      "",
+      "const ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}} = () => {",
+      "  return (",
+      "    <View>",
+      "      <Text>${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}</Text>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}};",
+      ""
+    ],
+    "description": "Creates a simple React Native functional component with default export"
+  }
+}
